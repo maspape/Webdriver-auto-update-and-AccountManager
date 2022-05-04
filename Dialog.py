@@ -41,9 +41,9 @@ class Dialog:
     def window_show(self):
         root = tk.Tk()
         font_family = tk.font.Font(family="Meiryo UI", size=16)
-        root.title(self.lable_name + "登録") #hogehoge登録と表示される
+        root.title(self.label_name + "登録") #hogehoge登録と表示される
         root.geometry("300x100")
-        label1 = tk.Label(root,text=self.lable_name,font=font_family)
+        label1 = tk.Label(root,text=self.label_name,font=font_family)
         label1.grid(row=1,column=1,padx=10)
         text1 = tk.Entry(root,show="*",width=30) if self.show == True \
         else tk.Entry(root,width=30)
